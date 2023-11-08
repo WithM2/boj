@@ -1,2 +1,16 @@
-# boj
-This is a auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+# 
+# 백준 & 프로그래머스 문제 풀이 목록
+
+프로그래머스의 경우, 푼 문제 목록에 대한 마이그레이션이 필요합니다.
+
+## 📚 백준
+### 🚀 Bronze
+| 문제번호 | 링크 |
+| ----- | ----- |
+|1037. 약수|[링크](./%EB%B0%B1%EC%A4%80/Bronze/1037.%E2%80%85%EC%95%BD%EC%88%98/README.md)|
+|28701. 세제곱의 합|[링크](./%EB%B0%B1%EC%A4%80/Bronze/28701.%E2%80%85%EC%84%B8%EC%A0%9C%EA%B3%B1%EC%9D%98%E2%80%85%ED%95%A9/README.md)|
+|5522. 카드 게임|[링크](./%EB%B0%B1%EC%A4%80/Bronze/5522.%E2%80%85%EC%B9%B4%EB%93%9C%E2%80%85%EA%B2%8C%EC%9E%84/README.md)|
+### 🚀 Gold
+| 문제번호 | 링크 |
+| ----- | ----- |
+|1167. 트리의 지름|[링크](./%EB%B0%B1%EC%A4%80/Gold/1167.%E2%80%85%ED%8A%B8%EB%A6%AC%EC%9D%98%E2%80%85%EC%A7%80%EB%A6%84/%ED%8A%B8%EB%A6%AC%EC%9D%98%E2%80%85%EC%A7%80%EB%A6%84.cc)|
