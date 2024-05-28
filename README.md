@@ -12,6 +12,7 @@
 |2530. 인공지능 시계|[링크](./%EB%B0%B1%EC%A4%80/Bronze/2530.%E2%80%85%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%E2%80%85%EC%8B%9C%EA%B3%84/README.md)|
 |28701. 세제곱의 합|[링크](./%EB%B0%B1%EC%A4%80/Bronze/28701.%E2%80%85%EC%84%B8%EC%A0%9C%EA%B3%B1%EC%9D%98%E2%80%85%ED%95%A9/README.md)|
 |5522. 카드 게임|[링크](./%EB%B0%B1%EC%A4%80/Bronze/5522.%E2%80%85%EC%B9%B4%EB%93%9C%E2%80%85%EA%B2%8C%EC%9E%84/%EC%B9%B4%EB%93%9C%E2%80%85%EA%B2%8C%EC%9E%84.cc)|
+|7572. 간지（干支）|[링크](./%EB%B0%B1%EC%A4%80/Bronze/7572.%E2%80%85%EA%B0%84%EC%A7%80%EF%BC%88%E5%B9%B2%E6%94%AF%EF%BC%89/README.md)|
 ### 🚀 Gold
 | 문제번호 | 링크 |
 | ----- | ----- |
