@@ -15,6 +15,14 @@ jobs: # 실제 실행될 내용
     steps:
     - name: Check out this repo
       uses: actions/checkout@v3 # checkout
+
+    #here
+    - name: Set up Node.js 20  # <-- 추가된 부분
+      uses: actions/setup-node@v3 # <-- 추가된 부분
+      with: # <-- 추가된 부분
+        node-version: '20' # Node.js 20 사용 <-- 추가된 부분
+    #here
+      
     - name: Set up Python 3.10 
       uses: actions/setup-python@v3 # setup-python
       with:
