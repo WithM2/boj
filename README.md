@@ -37,6 +37,10 @@
 |28325. 호숫가의 개미굴|[링크](./%EB%B0%B1%EC%A4%80/Gold/28325.%E2%80%85%ED%98%B8%EC%88%AB%EA%B0%80%EC%9D%98%E2%80%85%EA%B0%9C%EB%AF%B8%EA%B5%B4/README.md)|
 |7576. 토마토|[링크](./%EB%B0%B1%EC%A4%80/Gold/7576.%E2%80%85%ED%86%A0%EB%A7%88%ED%86%A0/%ED%86%A0%EB%A7%88%ED%86%A0.cc)|
 |9663. N－Queen|[링크](./%EB%B0%B1%EC%A4%80/Gold/9663.%E2%80%85N%EF%BC%8DQueen/README.md)|
+### 🚀 Platinum
+| 문제번호 | 링크 |
+| ----- | ----- |
+|28326. 고기 파티|[링크](./%EB%B0%B1%EC%A4%80/Platinum/28326.%E2%80%85%EA%B3%A0%EA%B8%B0%E2%80%85%ED%8C%8C%ED%8B%B0/%EA%B3%A0%EA%B8%B0%E2%80%85%ED%8C%8C%ED%8B%B0.py)|
 ### 🚀 Silver
 | 문제번호 | 링크 |
 | ----- | ----- |
