@@ -26,6 +26,7 @@ int main() {
                             min_dist = min(min_dist, abs(home[k].first - home[x].first) + abs(home[k].second - home[x].second));
                             max_dist = max(max_dist, min_dist);
                         }
+                        ans = min(max_dist, ans);
                     }
                 }
                 else {
