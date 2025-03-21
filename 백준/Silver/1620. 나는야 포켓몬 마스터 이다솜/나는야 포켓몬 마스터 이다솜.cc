@@ -1,41 +1,40 @@
-#include <iostream>
-#include <cstring>
-#include <algorithm>
-#include <vector>
-#include <queue>
-#include <stack>
-#include <map>
+#include <bits/stdc++.h>
+#define fastio ios::sync_with_stdio(0);cin.tie(0)
+#define rep(i,a,b) for(int i=(a);i<(b);i++)
+#define endl "\n"
+
 using namespace std;
 
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL); cout.tie(NULL);
-    
-    vector<string>pokenums;
-	map<string, int>pokemons;
-	int N, M;
-	cin >> N >> M;
-	
-	string pokemon;
-	for(int i=0; i<N; i++) {
-		cin >> pokemon;
-		pokenums.push_back(pokemon);
-		pokemons.insert(make_pair(pokemon, (i+1)));
-	}
-	
-	string find;
-	for(int i=0; i<M; i++) {
-		cin >> find;
-		if(find[0] >= '0' && find[0] <= '9') {
-			cout << pokenums[stoi(find)-1] << "\n";
-		}
-		else {
-			cout << pokemons[find] << "\n";
-		}
-	}
-	
-	return 0;
+int n, m;
+
+vector<string> num2pocket;
+map<string, string> pokcet2num;
+
+bool isNumber(const string& str) {
+    if(str[0]>='A' && str[0] <= 'Z'){
+        return false;
+    }
+    return !str.empty();
 }
 
-
-
+int main(void){
+    fastio;
+    cin>>n>>m;
+    rep(i, 1, n+1){
+        string tmp;
+        cin>>tmp;
+        num2pocket.push_back(tmp);
+        pokcet2num[tmp] = to_string(i);
+    }
+    while(m--){
+        string tmp;
+        cin>>tmp;
+        if (isNumber(tmp)){
+            
+            cout<<num2pocket[stoi(tmp) - 1]<<endl;
+        }
+        else{
+            cout<<pokcet2num[tmp]<<endl;
+        }
+    }
+}
