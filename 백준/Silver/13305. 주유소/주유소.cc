@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
+#define ll long long
 using namespace std;
 
-int road[100001];
-int cost[100001];
+ll road[100001];
+ll cost[100001];
 
 int main(){
 	ios::sync_with_stdio(false);
@@ -13,8 +14,8 @@ int main(){
 	for (int i = 1; i < n; i++) cin >> road[i];
 	for (int i = 1; i <= n; i++) cin >> cost[i];
 
-	int oil = cost[1];
-	int pay = 0;
+	ll oil = cost[1];
+	ll pay = 0;
 	for (int i = 1; i < n; i++) {
 		pay += oil * road[i];
 		oil = min(oil, cost[i+1]);
