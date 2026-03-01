@@ -1,52 +1,38 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 
-int a[10001] = { 0 };
-int b[10001] = { 0 };
-int num, pr, cnt = 0;
+vector<int> graph[105];
+queue<int> q;
+bool visited[105];
+int ans = 0;
 
-void infect(int* virus, int pr)
-{
-	for (int i = 1; i <= num; i++)
-	{
-		if (virus[i] == 1)
-		{
-			for (int j = 1; j <= pr; j++)
-			{
-				if (a[j] == i)
-				{ 
-					if (virus[b[j]] == 0)
-						cnt++;
-					virus[b[j]] = 1;
-				}
-				if (b[j] == i)
-				{
-					if (virus[a[j]] == 0)
-						cnt++;
-					virus[a[j]] = 1;
-				}
-			}
-		}
-	}
-}
+int main(){
+    fastio;
+    int n; cin >> n;
+    int nodes; cin >> nodes;
 
-int main()
-{
-	cin >> num;
-	cin >> pr;
+    for (int i = 0; i < nodes; i++) {
+        int x, y;
+        cin >> x >> y;
+        graph[x].push_back(y);
+        graph[y].push_back(x);
+    }
 
-	int* virus = new int[num + 1];
-	virus[1] = 1;
-	for (int i = 2; i <= num; i++) 
-		virus[i] = 0;
+    q.push(1);
+    while (!q.empty()) {
+        int now = q.front();
+        q.pop();
+        if (visited[now]) continue;
+        ans++;
+        visited[now] = true;
+        for (auto i : graph[now]) {
+            if(visited[i]) continue;
+            q.push(i);
+        }
+    }
 
-	for (int i = 1; i <= pr; i++)
-		cin >> a[i] >> b[i];
+    cout << ans-1;
 
-	for (int k = 0; k < pr; k++)
-		infect(virus, pr);
-
-	cout << cnt;
-
-	return 0;
+    return 0;
 }
